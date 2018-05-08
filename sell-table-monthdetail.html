@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sell-tabl-monthdetail.css">
+</head>
+
+<body>
+  <header class="title">
+      <a href="#">&lt返回</a>
+      销售合同
+  </header>
+  <section id="title">
+    <h3>
+      <img src="images/icon_1.png" alt="">
+      2017年11月
+      <span>></span> 
+      <span class="filter-text">筛选</span>
+    </h3>
+  </section>
+  <section v-cloak id="client">
+    <table>
+      <thead>
+        <tr>
+          <th>客户</th>
+          <th>类型</th>
+          <th>完成时间</th>
+          <th>金额</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(item,index) in clients"
+            :key="'clients_'+index"
+            :class={even:index%2==0}
+        >
+          <td  v-for="(value,index) in item"
+              :key="'clients_value_'+index"
+          >
+          {{value}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <footer id="back">
+    返回
+  </footer>
+  <script src="js/init.js"></script>
+  <script src="lib/vue.js"></script>
+  <script src="./js/sell-table-monthdetail.js"></script>
+</body>
+
+</html>

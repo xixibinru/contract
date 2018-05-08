@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/sell-status.css">
+</head>
+<body>
+    <header class="title">
+        <a href="#">&lt返回</a>
+        销售合同
+    </header>
+  <section v-cloak id="status" class="clearfix">
+    <div class="tab clearfix">
+      <div @click="getData('待处理')" :class="{current:current_status == '待处理'}">待处理</div>
+      <div @click="getData('进行中')" :class="{current:current_status == '进行中'}">进行中</div>
+      <div @click="getData('已完成')" :class="{current:current_status == '已完成'}">已完成</div>
+    </div>
+    <ul>
+      <li v-for="(item,index) in current_data"
+          :key="'status_' + index"
+      >
+        <h4>{{item.shop_name}}<span>{{item.price}}</span></h4>
+        <div class="status"><em>{{item.user_name}}</em><strong>{{item.status}}</strong><button :class="{complate:item.return_money == '已收款'}">{{item.return_money}}</button></div>
+        <div class="time">{{item.time}}</div>
+      </li>
+    </ul>
+  </section>
+
+
+  <script src="js/init.js"></script>
+  <script src="lib/vue.js"></script>
+  <script src="./js/sell-status.js"></script>
+  <script>
+      
+  </script>
+</body>
+</html>

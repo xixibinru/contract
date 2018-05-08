@@ -1,0 +1,229 @@
+ul {
+  background-color: #fff;
+} 
+li {
+  position: relative;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 0.4rem;
+  padding-left: 2.04rem;
+  color: #333;
+  line-height: 0.9rem;
+}
+li > a {
+  color: #333;
+  display: block;
+}
+
+li > a > i {
+  float: right;
+
+}
+
+li em {
+  position: absolute;
+  left: 0.4rem;
+  color: #666;
+}
+li strong {
+  color: #fec574;
+}
+li button {
+  width: 1.5rem;
+  color: #333;
+  font-size: 0.26rem;
+  line-height: 0.5rem;
+  border-radius: 0.1rem
+}
+li button + button {
+  margin-left: 0.2rem;
+}
+li button.current {
+  background-color: #64a2ff;
+  color:#fff;
+}
+
+#client-info {
+  margin-top: 0.2rem;
+}
+
+#contract-pictrue {
+  padding: 0 0.4rem;
+  padding-bottom: 0.34rem;
+  background-color: #fff;
+  margin-top: 0.2rem;
+}
+#contract-pictrue h3 {
+  line-height: 0.83rem;
+  color: #666;
+  font-size: 0.3rem;
+}
+#contract-pictrue h3 > span {
+  float: right;
+  font-size: 0.26rem;
+  color: #b0b0b0;
+}
+#contract-pictrue > div {
+  position: relative;
+  float: left;
+}
+#contract-pictrue > div + div {
+  margin-left: 0.2rem;
+}
+#contract-pictrue > div:nth-of-type(3n+1){
+  margin-left: 0;
+}
+#contract-pictrue > div:nth-of-type(n+4){
+  margin-top: 0.2rem;
+}
+#contract-pictrue > div i {
+  position: absolute;
+  left: -0.15rem;
+  top: -0.15rem;
+  background-color: #ff8089;
+  font-size: 0.28rem;
+  line-height: 0.28rem;
+  vertical-align: top;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  width: 0.3rem;
+  height: 0.3rem;
+  cursor: pointer;
+}
+#contract-pictrue > div label {
+  display: block;
+}
+#contract-pictrue > div img {
+  width: 2.1rem;
+  height: 1.36rem;
+}
+
+
+#project-list {
+  padding: 0 0.3rem;
+  margin-top: 0.38rem;
+}
+#project-list > .control {
+  line-height: 0.6rem;
+}
+#project-list > .control > div {
+  float: left;
+  border-radius: 0.08rem;
+  font-size: 0.24rem;
+}
+#project-list > .control > div + div {
+  margin-left: 0.2rem;
+}
+#project-list > .control > .money {
+  width: 3.16rem;
+  background-color: #0079ff ;
+  color: #88c0ff;
+  padding-left: 0.3rem;
+}
+#project-list > .control > .money > span {
+  padding-left: 0.2rem;
+  color: #fff;
+}
+#project-list > .control > .sort {
+  text-align: center;
+  width: 1.54rem;
+  border:0.02rem solid #0079ff;
+  color: #0079ff;
+}
+#project-list > .control > .select {
+  text-align: center;
+  width: 1.73rem;
+  border:0.02rem solid #ff3e4c;
+  color: #ff3e4c;
+}
+/* <li>
+    <div class="type">软件</div>
+    <div class="content">
+      <div class="content-left">
+        <h4>智宝钟控制系统</h4>
+        <p><span>￥2000</span> <span>X1</span></p>
+      </div>
+      ￥2000
+    </div>
+  </li> */
+#project-list ul {
+  margin-top: 0.38rem;
+}
+#project-list li {
+  border: 1px solid #ddddde;
+  padding: 0;
+
+}
+#project-list li + li {
+  margin-top: 0.2rem;
+}
+#project-list li .type{
+  padding: 0 0.34rem;
+  background-color: #fff;
+  font-size: 0.26rem;
+  color: #666;
+  line-height: 0.6rem;
+  border-bottom: 1px solid #ddddde;
+}
+#project-list li .content {
+  padding: 0.36rem;
+  background-color: #ececee;
+  text-align: right;
+  font-weight: 700;
+}
+#project-list li .content .content-left {
+  float: left;
+  text-align: left;
+}
+#project-list .content-left h4 {
+  line-height: 100%;
+  font-size: 0.32rem;
+  color: #333;
+  font-weight: normal;
+}
+#project-list .content-left p {
+  font-size: 0.26rem;
+  color: #9fa5ad;
+  margin-top: 0.16rem;
+}
+#project-list li i {
+  position: absolute;
+  left: -0.15rem;
+  top: -0.15rem;
+  background-color: #ff8089;
+  font-size: 0.28rem;
+  line-height: 0.28rem;
+  vertical-align: top;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  width: 0.3rem;
+  height: 0.3rem;
+  cursor: pointer;
+}
+#project-list .add {
+  background-color: #fff;
+  color: #0079ff;
+  text-align: center;
+  border: 1px solid #ddddde;
+  margin-top: 0.3rem;
+  line-height: 0.88rem;
+}
+#save {
+  line-height: 0.88rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+#save div {
+  width: 50%;
+  float: left;
+}
+#save .save {
+  background-color: #fff;
+  color: #0079ff;
+
+}
+#save .submit {
+  background-color: #0079ff;
+  color: #fff;
+}

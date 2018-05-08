@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="./css/sell-pending-contract.css">
+</head>
+
+<body>
+  <header class="title">
+    <a href="#">&lt返回</a>
+    销售合同
+  </header>
+  <section id="setup-info">
+    <ul>
+      <li><em>创建时间</em>2017-12-11</li>
+      <li><em>创建人</em>周天天</li>
+    </ul>
+  </section>
+  <section  id="client-info">
+    <ul>
+      <li><em>客户</em>玉清池</li>
+      <li><em>分店</em><a href="#">北京天安门店<i>></i></a></li>
+      <li><em>联系人</em><a href="#">潘总<i>></i></a></li>
+      <li><em>销售</em><a href="#">周天天<i>></i></a></li>
+      <li><em>类型</em><a href="#">智钟宝<i>></i></a></li>
+    </ul>
+  </section>
+  <section id="client-sign">
+    <ul>
+      <li><em>签订日期</em><a href="#">2017-12-11<i>></i></a></li>
+      <li><em>金额</em>2000.00</li>
+      <li><em>减免</em><strong>0.00</strong></li>
+      <li><em>注册方式</em><button class="current">厅斗云</button><button>加密狗</button><button>无</button></li>
+    </ul>
+  </section>
+  <section  id="contract-pictrue" class="clearfix">
+    <h3>合同照片<span>最多可上传6张</span></h3>
+    <div  v-for="(item,index) in pictrues" :key="'pic_'+index">
+      <i @click='removePic(index)'>×</i>
+      <img :src="item" alt="">
+    </div>
+    <div>
+      <input v-show="false" id="contract-pictrue-inputfile" @change="getBase64($event)" type="file">
+      <label for="contract-pictrue-inputfile">
+        <img src="./images/upload.jpg" alt="">
+      </label>
+    </div>
+  </section>
+  <section  id="project-list">
+    <div class="clearfix control" >
+      <div class="money">总金额<span>2000.00</span></div>
+      <div class="sort">项目排序</div>
+      <div class="select">选择报价单</div>
+    </div>
+    <ul>
+      <li>
+        <div class="type">软件</div>
+        <div class="content">
+          <div class="content-left">
+            <h4>智宝钟控制系统</h4>
+            <p><span>￥2000</span> <span>X1</span></p>
+          </div>
+          ￥2000
+        </div>
+        <i>×</i>
+      </li>
+    </ul>
+    <div class="add">+ 添加项目</div>
+  </section>
+  <section  id="save">
+    <div class="save">保存</div>
+    <div class="submit">提交审核</div>
+  </section>
+</body>
+<script src="./js/init.js"></script>
+<script src="./lib/vue.js"></script>
+<script src="./js/sell-pending-contract.js"></script>
+</html>

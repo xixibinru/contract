@@ -1,0 +1,65 @@
+#status .tab div{
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  color: #666;
+  line-height: 0.8rem;
+  background-color: #fff;
+}
+#status .tab div + div {
+  border-left: 1px solid #e8e8e8;
+}
+#status .tab div.current {
+  color: #0079ff;
+  border-bottom: 0.03rem solid #0079ff;
+}
+#status ul {
+  margin-top: 0.3rem;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+#status li {
+  border-top: 1px solid #e8e8e8;
+  /* height: 1.72rem; */
+  padding: 0.34rem;
+  margin-top: -1px;
+  
+}
+#status li h4 {
+
+  color: #333;
+  line-height: 100%;
+  font-size: 0.28rem;
+}
+#status li h4 span {
+  float: right;
+}
+#status .status {
+  font-size: 0.26rem;
+  margin-top: 0.16rem;
+  line-height: 0.36rem;
+}
+#status .status em {
+  color: #9fa5ad;
+}
+#status .status strong {
+  color: #0079ff;
+  margin-left: 0.36rem;
+}
+#status .status button {
+  float: right;
+  width: 1.1rem;
+  line-height: 0.36rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.22rem;
+  border-radius: 0.18rem;
+  background-color: #7cbcff;
+}
+#status .status button.complate {
+  background-color: #bfbfbf;
+}
+#status .time {
+  color: #9fa5ad;
+  margin-top: 0.14rem;
+}
